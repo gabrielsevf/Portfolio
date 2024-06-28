@@ -1,0 +1,86 @@
+.services{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 9% 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0 4rem;
+}
+
+.services-box{
+    width: 350px;
+    height: 300px;
+    border: solid 1px $bg-secondcolor;
+    border-radius: 15px;
+    padding: 2rem 2rem;
+    transition: 0.5s;
+}
+
+.services-box:hover{
+    border-color: $main-color;
+    box-shadow: 0 0 10px $main-color;
+    transform: scale(1.02);
+}
+
+.services-box:hover .servIcon,
+.services-box:hover h4,
+.services-box:hover p{
+    color: $main-color;
+}
+
+.servIcon{
+    font-size: 32px;
+    color: $text-color;
+    transition: .5s;
+}
+
+.box-info h4{
+    color: $text-color;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    transition: .5s;
+}
+
+.box-info p{
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+@media screen and (max-width: 964px){
+    .services{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .services-container{
+        width: 100%;
+        flex-direction: column;
+        gap: 4rem 0;
+    }
+
+    .services-box{
+        width: 100%;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .services{
+        margin-top: 10rem;
+    }
+}

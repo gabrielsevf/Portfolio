@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio // Gabriel</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/> 
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#home" class="logo">Gabriel</a>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#experience">Experiências</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+
+            <button onclick="menu()" id="btn-menu" class="btn-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service_section">Serviços</a></li>
+                <li><a href="#experience">Experiências</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="home" class="home">
+        <div class="home-img">
+            <img src="./assets/img/perfil.jpg" alt="">
+        </div>
+
+        <div class="home-content">
+            <h1>Oi, meu nome é <span>Gabriel</span></h1>
+            <h3 class="typing-text"><span></span></h3>
+            <p>
+                Eu me chamo Gabriel, sou desenvolvedor frontend, trabalho com HTML, SASS e JavaScript.
+            </p>
+            <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <a href="#" class="btn" onclick="btn_hire()">Contratar</a>
+        </div>
+    </main>
+
+    <section class="services" id="services">
+        <h2 class="heading" id="service_section">Serviços</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="box-info">
+                    <i class='bx bx-code-curly servIcon'></i>
+                    <h4>Desenvolvimento</h4>
+                    <p>Desenvolvo sites profissionais, blogs, portfólios, landing pages e e-commerce.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="box-info">
+                    <i class='bx bxs-pen servIcon'></i>
+                    <h4>UI Design</h4>
+                    <p>Desenho interface de forma que ela seja clara, objetiva e principalmente intuitiva para o usuário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="heading">Experiência</h2>
+        <div class="experience-container">
+            <div class="experience-box">
+                <div class="box-info">
+                    <i class="fa-solid fa-shop expIcon"></i>
+                    <h4>Garagem calçados</h4>
+                    <p>Loja online de vendas de sapatos femininos</p>
+                    <button class="btn btn-experience" onclick="work_garagem()">Visitar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <!-- Desenvolvimento -->
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/btn.js"></script>
+</body>
+
+</html>
